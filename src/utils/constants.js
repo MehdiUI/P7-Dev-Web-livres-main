@@ -1,0 +1,16 @@
+const API_URL = 'http://localhost:3001';
+
+export const API_ROUTES = {
+  SIGN_UP: `${API_URL}/api/users/signup`,
+  SIGN_IN: `${API_URL}/api/users/login`,
+  BOOKS: `${API_URL}/api/books`,
+  BEST_RATED: `${API_URL}/api/books/bestrating`,
+};
+
+export const APP_ROUTES = {
+  SIGN_UP: '/Inscription',
+  SIGN_IN: '/Connexion',
+  ADD_BOOK: '/Ajouter',
+  BOOK: '/livre/:id',
+  UPDATE_BOOK: 'livre/modifier/:id',
+};
