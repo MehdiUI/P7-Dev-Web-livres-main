@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 
 // Routes
 app.use('/api/books', bookRoutes); // Pour les livres
-app.use('/api/users', userRoutes); // Pour l'authentification des utilisateurs
+app.use('/api/auth', userRoutes); // Pour l'authentification des utilisateurs
 app.use('/images', express.static(path.join(__dirname, 'images'))); // Pour servir les images
 
 module.exports = app;
